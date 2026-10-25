@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id"
+  ><head
+    ><meta charset="utf-8" /><meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" /><title>Inbox · Elite Protection Bureau</title
+    ><link rel="stylesheet" href="style.css" /></head
+  ><body
+    ><header
+      ><a href="index.html" class="brand"
+        ><img src="assets/EPB%20Logo.png" alt="" onerror="this.hidden = true" /><span
+          >Elite Protection Bureau</span
+        ></a
+      ></header
+    ><div class="mailapp"
+      ><aside
+        ><h2>Mailbox</h2><div class="folder">✉ &nbsp; Inbox <b>1</b></div
+        ><div class="asidebottom"
+          >CYBER CONUNDRUM<br /><small>Elite Protection Bureau</small></div
+        ></aside
+      ><main class="mailmain"
+        ><div class="mailtop"
+          ><h1>Inbox <small>2 messages · 1 unread</small></h1></div
+        ><button class="mailrow" id="openmail" aria-expanded="false"
+          ><span
+            ><strong>Minister of Education</strong><b>Urgent Matters About Gangseo Operations</b></span
+          ></button
+        ><button class="mailrow read-mail" id="archived" disabled aria-label="Intel Information About Gangdong"><span><strong>Minister of Education</strong><b>Intel Information About Gangdong</b></span></button><article id="message" hidden
+          ><button class="back" id="closemail">Back to inbox</button
+          ><div class="email-subject"
+            ><h1>Urgent Matters About Gangseo Operations</h1><span class="inbox-chip">Inbox</span></div
+          ><div class="sender"
+            ><div class="sender-line"
+              ><strong>Minister of Education</strong><span>&lt;moedu@korea.kr&gt;</span></div
+            ><div class="recipient-line">to Rookies <span aria-hidden="true">▾</span></div></div
+          ><div class="mailbody"
+            ><p>Dear Rookies,</p
+            ><p>Kami mendapatkan laporan tentang keberadaan Inspector Kimbap Kimpul yang disebut menghilang setelah melakukan investigasi terhadap markas judi online yang terletak di Hwagok-dong, Gangseo-gu. Terakhir kali ponsel Inspector Kimbap Kimpul menyala adalah di koridor Hwagok-ro, dalam perjalanan dari sekolah menuju Hwagok-dong. Koridor ini terhubung ke akses Olympic-daero melalui kawasan Gayang. Kami menduga Inspector Kimbap Kimpul membuang ponselnya setelah merasakan ancaman di dalam proses penculikan tersebut.</p><p>Inspector Kimbap Kimpul berada di sekolah Gangseo Haedam High School yang terindikasi merupakan basis penyebaran judi online di lingkungan anak usia SMA. Dia menyamar menjadi siswa untuk mengetahui sistem dan cara kerja permainan judi seperti Cards of Luck. Dalam prosesnya, dia berutang dengan total mencapai hampir 20 juta Won. Namun, ketika dia tidak membayar utang tersebut atas perintah saya, dia mengalami penculikan.</p><p>Beruntung, sebelum diculik, Inspector Kimbap Kimpul berhasil mengirimkan beberapa dokumen mengenai sindikat di Hwagok-dong tersebut. Saatnya kalian menyelamatkan Kimpul sekaligus melenyapkan sindikat judi online di Gangseo untuk selamanya.</p></div
+          ><div class="attachmentheading">4 attachments</div
+          ><div class="attachments"
+            ><a class="attachment" href="mission-brief.html"
+              ><svg viewBox="0 0 40 48" aria-hidden="true">
+                <path d="M5 2h20l10 10v34H5z M25 2v10h10" /></svg
+              ><strong>Mission Brief</strong></a
+            ><a class="attachment" href="about-hwagok.html"
+              ><svg viewBox="0 0 40 48" aria-hidden="true">
+                <path d="M5 2h20l10 10v34H5z M25 2v10h10" /></svg
+              ><strong>About Hwagok Syndicate</strong></a
+            ><a class="attachment" href="location-remarks.html"
+              ><svg viewBox="0 0 40 48" aria-hidden="true">
+                <path d="M5 2h20l10 10v34H5z M25 2v10h10" /></svg
+              ><strong>Location Remarks</strong></a
+            ><a class="attachment" href="termination-portal.html"
+              ><svg viewBox="0 0 40 48" aria-hidden="true">
+                <path d="M5 2h20l10 10v34H5z M25 2v10h10" /></svg
+              ><strong>Termination Portal</strong></a
+            ></div
+          ></article
+        ></main
+      ></div
+    ><script>
+      const m = document.getElementById("message"),
+        b = document.getElementById("openmail");
+      b.onclick = () => {
+        m.hidden = false;
+ document.getElementById("archived").hidden=true; b.classList.add("read-mail"); document.querySelector(".folder b").textContent="0"; document.querySelector(".mailtop small").textContent="2 messages · 0 unread";
+        b.hidden = true;
+        b.setAttribute("aria-expanded", "true");
+      };
+      document.getElementById("closemail").onclick = () => {
+        m.hidden = true;
+ document.getElementById("archived").hidden=false;
+        b.hidden = false;
+        b.setAttribute("aria-expanded","false"); b.focus();
+      };
+    </script></body
+  ></html
+>
